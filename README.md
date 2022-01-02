@@ -1,2 +1,1 @@
-# temp
-Tailwind + Express projeleri için bir template
+# ve evet artık yarn kullanıyorum
