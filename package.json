@@ -1,0 +1,16 @@
+{
+  "name": "tail",
+  "version": "1.0.0",
+  "description": "asd",
+  "main": "main.js",
+  "author": "tirrek",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "node main.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  }
+}
