@@ -1,24 +1,8 @@
 const exp = require("express");
-const mongoose = require("mongoose");
 const conf = require("./src/configs/conf.json");
 require("ejs");
 
 var app = exp();
-
-// database connection \\
-mongoose.connect(conf.mongo, {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-});
-
-mongoose.connection.on("connected", () => {
-  console.log("Connected to DB");
-});
-
-mongoose.connection.on("error", () => {
-  console.error("Connection Error!");
-});
-// database connection end \\
 
 // configs \\
 app.set("view engine", "ejs");
@@ -31,6 +15,6 @@ app.get("/", function (req, res) {
 });
 
 // end pages \\
-app.listen(3000, () => {
+app.listen(conf.port, function () {
   console.log("listening on port 3000");
 });

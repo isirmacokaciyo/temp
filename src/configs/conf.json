@@ -1,3 +1,4 @@
 {
-    "mongo": "url"
+    "isim": "abe",
+    "port": 3000
 }
